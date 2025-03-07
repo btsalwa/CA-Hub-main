@@ -2,10 +2,10 @@ import React from "react";
 
 const VisionMission = () => {
   return (
-    <div className="w-full bg-green-50 py-12">
+    <div className="w-1/2 bg-white-50 py-12">
       <div className="max-w-[1200px] mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="bg-white p-8 rounded-lg shadow-sm">
+          <div className="bg-gray-50 p-8 rounded-lg shadow-sm">
             <div className="flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mb-4 mx-auto">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +34,7 @@ const VisionMission = () => {
             </p>
           </div>
 
-          <div className="bg-white p-8 rounded-lg shadow-sm">
+          <div className="bg-gray-50 p-8 rounded-lg shadow-sm">
             <div className="flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mb-4 mx-auto">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

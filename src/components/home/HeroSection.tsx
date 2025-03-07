@@ -1,10 +1,11 @@
 import React from "react";
 import { Button } from "../ui/button";
+import PhotoCarousel from "../PhotoCarousel";
 
 const HeroSection = () => {
   return (
-    <div className="relative w-full bg-green-700 text-white py-16 md:py-24">
-      <div className="max-w-[1200px] mx-auto px-4">
+    <div className="relative w-full bg-green-700 text-white py-14 md:py-14">
+      <div className="max-w-[1200px] mx-auto px-2">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div>
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
@@ -31,11 +32,23 @@ const HeroSection = () => {
               </Button>
             </div>
           </div>
-          <div className="hidden md:block">
-            <img
-              src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=1200&q=80"
-              alt="Conservation Agriculture Field"
-              className="rounded-lg shadow-lg"
+          <div className="flex-auto xl:block">
+            <PhotoCarousel
+              images={[
+                {
+                  url: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=1200&q=80",
+                  alt: "Sustainable farming field",
+                },
+                {
+                  url: "https://images.unsplash.com/photo-1592982537447-6e202fe64811?w=1200&q=80",
+                  alt: "Organic crops growing",
+                },
+                {
+                  url: "https://images.unsplash.com/photo-1595841696677-6489ff3f8cd1?w=1200&q=80",
+                  alt: "Conservation agriculture",
+                },
+              ]}
+              autoplayInterval={5000}
             />
           </div>
         </div>
